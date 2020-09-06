@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Dzmitry Dudov Eximination</title>
+
+	<!--Stylesheet-->
+	<link rel="stylesheet" href="style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
+
+	<!-- JS -->
+	<script src="script.js"></script>
+	<!-- <script src="snow.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+
+</head>
+
+<body class="darkBG">
+	<header>
+		<img class="logopic" src="images/cloud1.png" alt="logo">
+		<h1>Local Weather</h1>
+	</header>
+
+	<!-- Målet med själva arbete var att skapa en väder sida. Det var ganska svårt att bestämma över själva projektet. Först sökte jag på hur gör man en väder sida och hittade en sida som beskriver hela arbete med NODE.js. Där skulle man utgå från eget server. Jag märkte där att man kan använda API. Det var väldig svårt att förstå hur en API fungerar och hur kopplar man det. Det tog för mig mest av tiden att förstå information om API. Alltså ville jag använda bootstrap eftersom med bootstrap det känns lite lättare att koda. Men när jag var klar med style.css märkte jag att sidan ser inte så bra ut, därför ångrade mig. Alltså hämtade jag jquery från https://code.jquery.com/, för att senare använda det med api. Jag kunde klara mig med vanila js, men jag anser att det tar för lång tid och koden blir för stor när man använder den vanila js, just därför har jag jquery kvar. API key hämtade jag från Open Weather Map och all information hämtade jag också därifrån. Det som handlar snöflingor är att där jag ändrade tredjeparts kod. Jag kan inte hitta själva källan, därför om ni inte kan bedöma det (utan källa) - gör det inte. I alla fall där beskrev jag nästan varje rad, så ni kan bara läsa det i alla fall. Snöflingor buggar lite gran, ibland fastnar de, men det som jag inte förstör är att snöflingor försvinner i mitten (om man öppnar browser med full skärm). Sen har jag också gjort små scripts (ni hittar de i script.js filen). Jag ville också koppla ENTER knapp till själva knappen, men lyckades inte. 
+	Logobilden som ni kan se i header gjorde jag själv i PS. Backgrundsbild hämtade jag härifrån https://unsplash.com/search/photos/high-resolution . Logo för instagram hittade jag i google bilder och ändrade en hel del.
+	Annars jag hoppas att ni gillar mitt projekt :). Tack för kursen och hoppas att vi ses igen. OBS! Det var väldig kul med handlednignar :D. 
+	MVH Dzmitry!
+	 -->
+
+	<div class="main">
+		<div class="wrapper">
+			<div class="block1">
+				<div id="s"></div>
+				<form name="f1">
+					<input type="text" class="cityname" id="city" value="" placeholder="Enter your City">
+					<input type="button" value="Get your weather" onclick="weather()" class="butt" id="get">
+				</form>
+				<div class="info" id="show"></div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+
+</html>
